@@ -1,10 +1,10 @@
 function done5() {
     var min = document.getElementById("min").value;
-    var min = parseInt(min, 10);
+    var min = parseInt(Math.floor(min, 10));
     var max = document.getElementById("max").value;
-    var max = parseInt(max, 10);
+    var max = parseInt(Math.floor(max, 10));
     var random = document.getElementById("numb").value;
-    var random = parseInt(random, 10);
+    var random = parseInt(Math.floor(random, 10));
     if (min >= max)
         document.getElementById("total5").innerHTML = "Try another number!"
     else {

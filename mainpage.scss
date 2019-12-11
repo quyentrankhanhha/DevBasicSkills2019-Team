@@ -10,6 +10,10 @@ header {
     a {
         text-decoration: none;
         color: #fff;
+        &:hover {
+            text-decoration: none;
+            color: #fff;
+        }
     }
 }
 main {
