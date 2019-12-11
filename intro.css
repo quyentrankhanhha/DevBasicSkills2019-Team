@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.full-image {
+    width: 100%;
+    height: 100vh;
+    background: url('land.jpeg') no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+.our {
+    position: absolute;
+    top: 45%;
+    left: 47.5%;
+}
+
+.our:hover a{
+    color: #0a2f59;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

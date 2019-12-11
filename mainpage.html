@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Frontpage</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/62f99286f5.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mainpage.css">
+    </link>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid py-3">
+            <a href="intro.html">
+                <h4>Convert</h4>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="text-center">
+                <input id="tab1" type="radio" name="tabs" checked>
+                <label class="menu" for="tab1">
+                    number system conversions
+                </label>
+                <input id="tab2" type="radio" name="tabs">
+                <label class="menu" for="tab2">
+                    number system output
+                </label>
+                <input id="tab3" type="radio" name="tabs">
+                <label class="menu" for="tab3">
+                    combinatorics
+                </label>
+                <input id="tab4" type="radio" name="tabs">
+                <label class="menu" for="tab4">
+                    truth tables
+                </label>
+                <input id="tab5" type="radio" name="tabs">
+                <label class="menu" for="tab5">
+                    random values
+                </label>
+                <input id="tab6" type="radio" name="tabs">
+                <label class="menu" for="tab6">
+                    percentage
+                </label>
+                <section class="content1 container">
+                    <h3 class="text-center pt-3">Numberal Systems</h3>
+                    <div class="instruction">
+                        <h4 class="py-2">Binary Numberal System- Base 2</h4>
+                        <p>Binary numbers uses only 0 and 1 digits.</p>
+                        <p>B denotes binary prefix.</p>
+                        <b>Examples:</b>
+                        <p>10101<sub>2</sub> = 10101B =
+                            1x2<sup>4</sup>+0x2<sup>3</sup>+1x2<sup>2</sup>+0x2<sup>1</sup>+1x2<sup>0</sup> = 16+4+1 =
+                            21
+                        </p>
+                        <p>10111<sub>2</sub> = 10111B =
+                            1x2<sup>4</sup>+0x2<sup>3</sup>+1x2<sup>2</sup>+1x2<sup>1</sup>+1x2<sup>0</sup> = 16+4+2+1 =
+                            23
+                        </p>
+                        <p>100011<sub>2</sub> = 100011B = 1x2<sup>5</sup>+
+                            0x2<sup>4</sup>+0x2<sup>3</sup>+0x2<sup>2</sup>+1x2<sup>1</sup>+1x2<sup>0</sup> = 32+2+1 =
+                            35
+                        </p>
+                        <h4 class="py-2">Octal Numeral System - Base 8</h4>
+                        <p>Octal numbers uses digits from 0..7.</p>
+                        <b>Examples:</b>
+                        <p>27<sub>8</sub> = 2x8<sup>1</sup>+7x8<sub>0</sub> = 16+7 = 23</p>
+                        <p>30<sub>8</sub> = 3x8<sup>1</sup>+0x8<sub>0</sub> = 24</p>
+                        <p>4307<sub>8</sub> = 4x8<sup>3</sup>+3x8<sup>2</sup>+0x8<sub>1</sub>+7x8<sup>0</sup> = 2247</p>
+                        <h4 class="py-2">Decimal Numeral System - Base 10</h4>
+                        <p>Decimal numbers uses digits from 0..9.</p>
+                        <p>These are the regular numbers that we use.</p>
+                        <b>Example:</b>
+                        <p>2538<sub>10</sub> = 2x10<sup>3</sup>+5x10<sup>2</sup>+3x10<sup>1</sup>+8x10<sup>0</sup></p>
+                        <h4 class="py-2">Hexadecimal Numberal System - Base 16</h4>
+                        <p>Hex numbers uses digits from 0..9 and A..F.</p>
+                        <p>H denotes hex prefix.</p>
+                        <b>Examples:</b>
+                        <p>28<sub>16</sub> = 28H = 2x16<sup>1</sup>+8x16<sup>0</sup> = 40</p>
+                        <p>2F<sub>16</sub> = 2FH = 2x16<sup>1</sup>+15x16<sup>0</sup> = 47</p>
+                        <p>BC12<sub>16</sub> = BC12H =
+                            11x16<sup>3</sup>+12x16<sup>2</sup>+1x16<sup>1</sup>+2x16<sup>0</sup> = 48146</p>
+                    </div>
+                </section>
+                <section class="content2 container">
+                </section>
+                <section class="content3 container">
+                    <h3 class="text-center pt-3">Permutations and Combinations</h3>
+                    <div class="instruction">
+                        <h4 class="py-2">Permutations</h4>
+                        <p>There are basically two types of permulation:</p>
+                        <b>Repetition is allowed:</b>
+                        <div class="box">
+                            <p class="text-center">n<sup>r</sup></p> where <b>n</b> is the number of things to choose
+                            from, and we
+                            choose <b>r</b> of them, repetition is allowed, and order matters.
+                        </div>
+                        <b>No repetition:</b>
+                        <div class="box">
+                            <div class="text-center">
+                                <span class="a"><span class="b">n!</span><span class="b c">(n-r)!</span>
+                                </span>
+                            </div>
+                            <p>where <b>n</b> is the number of things to choose from, and we choose <b>r</b> of them, no
+                                repetitions, order matters.</p>
+                        </div>
+                        <h4 class="py-2">Combinations</h4>
+                        <div class="box">
+                            <div class="text-center">
+                                <span class="a"><span class="b">n!</span><span class="b c">r!(n-r)!</span>
+                                </span>
+                            </div>
+                            <p>where <b>n</b> is the number of things to choose from, and we choose <b>r</b> of them, no
+                                repetition, order doesn't matter.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="content4 container">
+                    <h3 class="text-center pt-3">Truth Table</h3>
+                    <div class="instruction">
+                        <h4>Definition</h4>
+                        <p>A <b>truth table</b> is a mathematical table used to determine if a compound statement is
+                            true or false. In truth table, each statement is typically represented by a letter or
+                            variable, like p, q, or r, and each statement also has its own correspoding column in the
+                            truth table that lists all of the possible truth values.</p>
+                        <p>The <b>negation</b> of a statement,called not p, is the statement that contradicts p and has
+                            the opposite truth value.</p>
+                        <table class="table table-bordered text-center">
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="2">Negation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p</td>
+                                    <td>&#172;p</td>
+                                </tr>
+                                <tr>
+                                    <td>T</td>
+                                    <td>F</td>
+                                </tr>
+                                <tr>
+                                    <td>F</td>
+                                    <td>T</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h4>Conjunction</h4>
+                        <p>A <b>conjunction</b> is a compound statement representing the word 'and'</p>
+                        <table class="table table-bordered text-center">
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="3">Conjunction</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p</td>
+                                    <td>q</td>
+                                    <td>p&#8743;q</td>
+                                </tr>
+                                <tr>
+                                    <td>T</td>
+                                    <td>T</td>
+                                    <td>T</td>
+                                </tr>
+                                <tr>
+                                    <td>T</td>
+                                    <td>F</td>
+                                    <td>F</td>
+                                </tr>
+                                <tr>
+                                    <td>F</td>
+                                    <td>T</td>
+                                    <td>F</td>
+                                </tr>
+                                <tr>
+                                    <td>F</td>
+                                    <td>F</td>
+                                    <td>F</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h4>Disjunction</h4>
+                        <p>A <b>disjunction</b> is a compound statement representing the word 'or'.</p>
+                        <table class="table table-bordered text-center">
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="3">Disjunction</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p</td>
+                                    <td>q</td>
+                                    <td>p&#8744;q</td>
+                                </tr>
+                                <tr>
+                                    <td>T</td>
+                                    <td>T</td>
+                                    <td>T</td>
+                                </tr>
+                                <tr>
+                                    <td>T</td>
+                                    <td>F</td>
+                                    <td>T</td>
+                                </tr>
+                                <tr>
+                                    <td>F</td>
+                                    <td>T</td>
+                                    <td>T</td>
+                                </tr>
+                                <tr>
+                                    <td>F</td>
+                                    <td>F</td>
+                                    <td>F</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h4>Implication</h4>
+                        <p>An <b>implication</b> is a conditional 'if-then' statement.
+                        </p>
+                        <table class="table table-bordered text-center">
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="3">Implication</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p</td>
+                                    <td>q</td>
+                                    <td>p&#8594;q</td>
+                                </tr>
+                                <tr>
+                                    <td>T</td>
+                                    <td>T</td>
+                                    <td>T</td>
+                                </tr>
+                                <tr>
+                                    <td>T</td>
+                                    <td>F</td>
+                                    <td>F</td>
+                                </tr>
+                                <tr>
+                                    <td>F</td>
+                                    <td>T</td>
+                                    <td>T</td>
+                                </tr>
+                                <tr>
+                                    <td>F</td>
+                                    <td>F</td>
+                                    <td>T</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section class="content5 container">
+                    <h3 class="text-center pt-3">Random Values</h3>
+                    <form id="myForm5">
+                        <label for="type">Enter the range of numbers: </label>
+                        <span>[
+                            <input id="min" value="" type="number">
+                            ,
+                            <input id="max" value="" type="number">
+                            ]
+                        </span>
+                        <label for="type">Enter the number(s) you want to generate: </label>
+                        <input id="numb" value="" type="number">
+                        <div>
+                            <button id="result" type="button" class="btn btn-outline-primary"
+                                onclick="done5()">Find</button>
+                            <button id="clear" type="button" class="btn btn-outline-primary"
+                                onclick="remove5()">Clear</button>
+                        </div>
+                        <span id="final5">
+                            <p>Result</p>
+                            <h3 id="total5"></h3>
+                        </span>
+                    </form>
+                </section>
+                <section class="content6 container">
+                    <h3 class="text-center pt-3">Calculating Discounts</h3>
+                    <form id="myForm6">
+                        <label for="type">Enter the number:</label>
+                        <input id="firstnumber" value="" type="number">
+                        <label for="type">Enter the percentage:</label>
+                        <input id="secondnumber" value="" type="number" placeholder="%">
+                        <div>
+                            <button id="result" type="button" class="btn btn-outline-primary"
+                                onclick="done6()">Try</button>
+                            <button id="clear" type="button" class="btn btn-outline-primary"
+                                onclick="remove6()">Clear</button>
+                        </div>
+                        <span id="final6">
+                            <p>Result</p>
+                            <h3 id="total6"></h3>
+                        </span>
+                    </form>
+                    <div class="instruction">
+                        <h4>How to calculate discounts?</h4>
+                        <div class="dropcap">1 <b>Write down the original price and the discount percentage.
+                            </b>The
+                            original
+                            price is usually
+                            the
+                            big number that retailers will mark through or make especially large so you know how
+                            good of
+                            a “deal” you’re getting. Be sure to also pay attention to whether the discounted
+                            percentage
+                            applies to a single item or the total.
+                        </div>
+                        <div class="box">If it is the total, you would add up all the original prices to get your
+                            whole
+                            amount to
+                            which you apply the percentage discount. Otherwise, you will only apply the discount
+                            to the
+                            single original price.</div>
+                        <div class="dropcap">2 <b>Find the opposite of the discount percentage.</b> This trick
+                            lets
+                            you perform 1
+                            calculation instead of 2! The opposite of a percent is 100% minus the percent you
+                            are
+                            working with, i.e. the amount of the item you are still paying for. If you want to
+                            buy a
+                            shirt that is 30% off, the opposite of this is 70%, meaning you would have to pay
+                            70% of the
+                            original price.</div>
+                        <div class="dropcaps">3
+                            <b>Convert the opposite percent into a decimal.</b> To convert a percent into a
+                            decimal,
+                            divide by 100%, multiply times 0.01, or move the decimal two places to the left. In
+                            this
+                            example, 70%/100% = 70/100 = 7/10 = 0.7.</div>
+                        <div class="dropcaps">4 <b>Multiply the original price by the new decimal.</b> If the
+                            shirt you
+                            want
+                            is
+                            $20, multiply $20 by 0.7. This comes to $14, meaning the shirt is now on sale for
+                            $14.</div>
+                        <div class="dropcaps">5 <b>Calculate your savings afterward to feel better.</b> Once you
+                            get home,
+                            it can
+                            be a good idea to check your receipts, not only to make sure the discounts were
+                            applied
+                            correctly but to see how much you saved altogether. Here, you can simply subtract
+                            the sale
+                            price from the original price ($20 - $14 = $6 saved)!</div>
+                        <div class="box">Tips: x% of y is the same as y% of x. For example, 10% of 30 = 3 = 30% of
+                            10.</div>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </main>
+    <footer class="text-center mt-2 py-1">
+        <p class="mb-0">Copyright &#169; 2019 Designed by Ha Quyen, Onni & Miika</p>
+        <a href="https://github.com/quyentrankhanhha/DevBasicSkills2019-Team"><i class="fab fa-github"></i></a>
+
+    </footer>
+    <!-- Optional JavaScript -->
+    <script src="cal.js"></script>
+    <script src="random.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

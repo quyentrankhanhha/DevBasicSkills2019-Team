@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+header {
+  background: #0a2f59;
+}
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main input[type=radio] {
+  visibility: hidden;
+  display: none;
+  margin: 0 auto;
+}
+main input[type=radio]:checked + .menu {
+  color: #ffc80a;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: #c20d00;
+}
+main .menu {
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 20px 0 0px;
+  padding: 15px 60px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.9em;
+  color: #2c2c2f;
+  border: none;
+  background: #eff0f1;
+  line-height: 1.5;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+}
+main .content1, main .content2, main .content3, main .content4, main .content5, main .content6 {
+  text-align: initial;
+  margin: 25px 0;
+  padding: 10px 0;
+  display: none;
+  border: 1px solid #ddd;
+}
+main .content1 form, main .content2 form, main .content3 form, main .content4 form, main .content5 form, main .content6 form {
+  padding: 15px 40px;
+}
+main .content1 form label, main .content2 form label, main .content3 form label, main .content4 form label, main .content5 form label, main .content6 form label {
+  text-transform: none;
+  background: none;
+  display: block;
+}
+main .content1 form .btn-outline-primary, main .content2 form .btn-outline-primary, main .content3 form .btn-outline-primary, main .content4 form .btn-outline-primary, main .content5 form .btn-outline-primary, main .content6 form .btn-outline-primary {
+  display: inline-block;
+  margin: 10px 0;
+  color: #c20d00;
+  border: 1px solid #c20d00;
+}
+main .content1 form .btn-outline-primary:hover, main .content2 form .btn-outline-primary:hover, main .content3 form .btn-outline-primary:hover, main .content4 form .btn-outline-primary:hover, main .content5 form .btn-outline-primary:hover, main .content6 form .btn-outline-primary:hover {
+  background: #c20d00;
+  color: white;
+}
+main .content1 .instruction, main .content2 .instruction, main .content3 .instruction, main .content4 .instruction, main .content5 .instruction, main .content6 .instruction {
+  padding: 15px 40px;
+}
+main .content1 .instruction .dropcap::first-letter, main .content2 .instruction .dropcap::first-letter, main .content3 .instruction .dropcap::first-letter, main .content4 .instruction .dropcap::first-letter, main .content5 .instruction .dropcap::first-letter, main .content6 .instruction .dropcap::first-letter {
+  font-size: 60px;
+  padding-right: 8px;
+  float: left;
+  line-height: 0.6;
+  font-family: georgia;
+}
+main .content1 .instruction .dropcaps::first-letter, main .content2 .instruction .dropcaps::first-letter, main .content3 .instruction .dropcaps::first-letter, main .content4 .instruction .dropcaps::first-letter, main .content5 .instruction .dropcaps::first-letter, main .content6 .instruction .dropcaps::first-letter {
+  line-height: 0.7;
+  font-size: 50px;
+  padding-right: 8px;
+  float: left;
+  font-family: georgia;
+}
+main .content1 .instruction .box, main .content2 .instruction .box, main .content3 .instruction .box, main .content4 .instruction .box, main .content5 .instruction .box, main .content6 .instruction .box {
+  border-left: 5px solid #0a2f59;
+  padding: 10px;
+  margin: 10px 15px;
+  background: #7598bf;
+}
+main .content1 .instruction .box .a, main .content2 .instruction .box .a, main .content3 .instruction .box .a, main .content4 .instruction .box .a, main .content5 .instruction .box .a, main .content6 .instruction .box .a {
+  font-size: 18px;
+  display: inline-block;
+}
+main .content1 .instruction .box .a .b, main .content2 .instruction .box .a .b, main .content3 .instruction .box .a .b, main .content4 .instruction .box .a .b, main .content5 .instruction .box .a .b, main .content6 .instruction .box .a .b {
+  display: block;
+  padding: 0 5px;
+  position: relative;
+  top: 5px;
+  text-align: center;
+}
+main .content1 .instruction .box .a .c, main .content2 .instruction .box .a .c, main .content3 .instruction .box .a .c, main .content4 .instruction .box .a .c, main .content5 .instruction .box .a .c, main .content6 .instruction .box .a .c {
+  border-top: 1px solid black;
+}
+main .content1 .instruction .table, main .content2 .instruction .table, main .content3 .instruction .table, main .content4 .instruction .table, main .content5 .instruction .table, main .content6 .instruction .table {
+  width: 30%;
+}
+main #tab1:checked ~ .content1, main #tab2:checked ~ .content2, main #tab3:checked ~ .content3, main #tab4:checked ~ .content4, main #tab5:checked ~ .content5, main #tab6:checked ~ .content6 {
+  display: block;
+}
+
+footer {
+  background: #0a2f59;
+  color: #bab9b9;
+}
+footer a {
+  color: #bab9b9;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=mainpage.css.map */
