@@ -110,6 +110,12 @@ main .content1 .instruction .box .a .c, main .content2 .instruction .box .a .c, 
 main .content1 .instruction .table, main .content2 .instruction .table, main .content3 .instruction .table, main .content4 .instruction .table, main .content5 .instruction .table, main .content6 .instruction .table {
   width: 30%;
 }
+main .content1 label {
+  width: 10%;
+}
+main .content1 input {
+  width: 15%;
+}
 main #tab1:checked ~ .content1, main #tab2:checked ~ .content2, main #tab3:checked ~ .content3, main #tab4:checked ~ .content4, main #tab5:checked ~ .content5, main #tab6:checked ~ .content6 {
   display: block;
 }

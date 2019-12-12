@@ -18,7 +18,6 @@ function done5() {
         }
     }
 }
-done5();
 
 function remove5() {
     document.getElementById("myForm5").reset();

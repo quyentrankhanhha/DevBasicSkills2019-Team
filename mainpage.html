@@ -53,6 +53,32 @@
                 </label>
                 <section class="content1 container">
                     <h3 class="text-center pt-3">Numberal Systems</h3>
+                    <form>
+                        <span class="d-block">
+                            <label for="base2" class="d-inline-block">Binary (2)</label>
+                            <input type="text" name="base2" id="base2" accesskey="B" size="32" onchange="alarm4()"
+                                oninput="numberOnInput(this)" maxlength="48">
+                            <p id="done4"></p>
+                        </span>
+                        <span class="d-block">
+                            <label for="base8" class="d-inline-block">Octal (8)</label>
+                            <input type="text" name="base8" id="base8" accesskey="O" size="18" onchange="alarm3()"
+                                oninput="numberOnInput(this)" maxlength="16">
+                            <p id="done3"></p>
+                        </span>
+                        <span class="d-block">
+                            <label for="base10" class="d-inline-block">Decimal (10)</label>
+                            <input type="text" name="base10" id="base10" accesskey="D" size="18" onchange="alarm1()"
+                                oninput="numberOnInput(this)" maxlength="15">
+                            <p id="done1"></p>
+                        </span>
+                        <span class="d-block">
+                            <label for="base16" class="d-inline-block">Hex (16)</label>
+                            <input type="text" name="base16" id="base16" accesskey="H" size="18" onchange="alarm2()"
+                                oninput="numberOnInput(this)" maxlength="12">
+                            <p id="done2"></p>
+                        </span>
+                    </form>
                     <div class="instruction">
                         <h4 class="py-2">Binary Numberal System- Base 2</h4>
                         <p>Binary numbers uses only 0 and 1 digits.</p>
@@ -370,8 +396,9 @@
 
     </footer>
     <!-- Optional JavaScript -->
-    <script src="cal.js"></script>
-    <script src="random.js"></script>
+    <script src="section1.js"></script>
+    <script src="section5.js"></script>
+    <script src="section6.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
