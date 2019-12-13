@@ -60,13 +60,13 @@ main .content1 form label, main .content2 form label, main .content3 form label,
   background: none;
   display: block;
 }
-main .content1 form .btn-outline-primary, main .content2 form .btn-outline-primary, main .content3 form .btn-outline-primary, main .content4 form .btn-outline-primary, main .content5 form .btn-outline-primary, main .content6 form .btn-outline-primary {
+main .content1 .btn-outline-primary, main .content2 .btn-outline-primary, main .content3 .btn-outline-primary, main .content4 .btn-outline-primary, main .content5 .btn-outline-primary, main .content6 .btn-outline-primary {
   display: inline-block;
   margin: 10px 0;
   color: #c20d00;
   border: 1px solid #c20d00;
 }
-main .content1 form .btn-outline-primary:hover, main .content2 form .btn-outline-primary:hover, main .content3 form .btn-outline-primary:hover, main .content4 form .btn-outline-primary:hover, main .content5 form .btn-outline-primary:hover, main .content6 form .btn-outline-primary:hover {
+main .content1 .btn-outline-primary:hover, main .content2 .btn-outline-primary:hover, main .content3 .btn-outline-primary:hover, main .content4 .btn-outline-primary:hover, main .content5 .btn-outline-primary:hover, main .content6 .btn-outline-primary:hover {
   background: #c20d00;
   color: white;
 }
@@ -110,11 +110,18 @@ main .content1 .instruction .box .a .c, main .content2 .instruction .box .a .c, 
 main .content1 .instruction .table, main .content2 .instruction .table, main .content3 .instruction .table, main .content4 .instruction .table, main .content5 .instruction .table, main .content6 .instruction .table {
   width: 30%;
 }
-main .content1 label {
+main .content1 form label {
   width: 10%;
 }
-main .content1 input {
+main .content1 form input {
   width: 15%;
+}
+main .content1 form p {
+  color: red;
+}
+main .content2 button {
+  position: relative;
+  left: 47.5%;
 }
 main #tab1:checked ~ .content1, main #tab2:checked ~ .content2, main #tab3:checked ~ .content3, main #tab4:checked ~ .content4, main #tab5:checked ~ .content5, main #tab6:checked ~ .content6 {
   display: block;

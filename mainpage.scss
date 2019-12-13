@@ -56,15 +56,15 @@ main {
                 background: none;
                 display: block;
             }
-            .btn-outline-primary {
-                display: inline-block;
-                margin: 10px 0;
-                color: #c20d00;
-                border: 1px solid #c20d00;
-                &:hover {
-                    background: #c20d00;
-                    color: white;
-                }
+        }
+        .btn-outline-primary {
+            display: inline-block;
+            margin: 10px 0;
+            color: #c20d00;
+            border: 1px solid #c20d00;
+            &:hover {
+                background: #c20d00;
+                color: white;
             }
         }
         .instruction {
@@ -109,11 +109,22 @@ main {
         }
     }
     .content1 {
-        label {
-            width: 10%;
+        form {
+            label {
+                width: 10%;
+            }
+            input {
+                width: 15%;
+            }
+            p {
+                color: red;
+            }
         }
-        input {
-            width: 15%;
+    }
+    .content2 {
+        button {
+            position: relative;
+            left: 47.5%;
         }
     }
     #tab1:checked~.content1, #tab2:checked~.content2, #tab3:checked~.content3,#tab4:checked~.content4, #tab5:checked~.content5, #tab6:checked~.content6 {

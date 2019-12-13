@@ -6,7 +6,7 @@ function done5() {
     var random = document.getElementById("numb").value;
     var random = parseInt(Math.floor(random, 10));
     if (min >= max)
-        document.getElementById("total5").innerHTML = "Try another number!"
+        document.getElementById("total5").innerHTML = "Try another number!";
     else {
         for (var i = 0; i < random; i++) {
             var n = Math.floor(Math.random() * (max - min + 1)) + min;
