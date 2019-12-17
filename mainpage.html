@@ -54,30 +54,37 @@
                 <section class="content1 container">
                     <h3 class="text-center pt-3">Numberal Systems</h3>
                     <form>
-                        <span class="d-block">
-                            <label for="base2" class="d-inline-block">Binary (2)</label>
-                            <input type="text" name="base2" id="base2" accesskey="B" size="32" onchange="alarm4()"
-                                oninput="numberOnInput(this)" maxlength="48">
-                            <p id="done4"></p>
-                        </span>
-                        <span class="d-block">
-                            <label for="base8" class="d-inline-block">Octal (8)</label>
-                            <input type="text" name="base8" id="base8" accesskey="O" size="18" onchange="alarm3()"
-                                oninput="numberOnInput(this)" maxlength="16">
-                            <p id="done3"></p>
-                        </span>
-                        <span class="d-block">
-                            <label for="base10" class="d-inline-block">Decimal (10)</label>
-                            <input type="text" name="base10" id="base10" accesskey="D" size="18" onchange="alarm1()"
-                                oninput="numberOnInput(this)" maxlength="15">
-                            <p id="done1"></p>
-                        </span>
-                        <span class="d-block">
-                            <label for="base16" class="d-inline-block">Hex (16)</label>
-                            <input type="text" name="base16" id="base16" accesskey="H" size="18" onchange="alarm2()"
-                                oninput="numberOnInput(this)" maxlength="12">
-                            <p id="done2"></p>
-                        </span>
+                        <div id="content">
+                            <h1>Number Systems Conversions</h1>
+
+                            Type your number here
+                            <input type="text" name="n" id="n">
+                            <br>
+                            <br>
+                            Calculate from
+                            <select name="type" id="type1">
+                                <option value="binary">Binary</option>
+                                <option value="decimal">Decimal</option>
+                                <option value="octal">Octal</option>
+                                <option value="hexadecimal">Hexadecimal</option>
+                            </select>
+                            <br>
+                            <br>
+                            calculate to
+                            <select name="type" id="type2">
+                                <option value="binary">Binary</option>
+                                <option value="decimal">Decimal</option>
+                                <option value="octal">Octal</option>
+                                <option value="hexadecimal">Hexadecimal</option>
+                            </select>
+                            <br>
+                            <br>
+                            <button onclick="calculate()">Calculate</button>
+                            <h2 id="result"></h2>
+                        </div>
+                        <div id="footer">
+
+                        </div>
                     </form>
                     <div class="instruction">
                         <h4 class="py-2">Binary Numberal System- Base 2</h4>
