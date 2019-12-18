@@ -27,6 +27,10 @@ a, a:hover {
     color: white;
 }
 
+.nav-item a:hover {
+  color: #0a2f59;
+}
+
 @-webkit-keyframes hvr-buzz-out {
     10% {
       -webkit-transform: translateX(3px) rotate(2deg);

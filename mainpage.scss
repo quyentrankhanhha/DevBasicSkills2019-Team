@@ -130,6 +130,17 @@ main {
     #tab1:checked~.content1, #tab2:checked~.content2, #tab3:checked~.content3,#tab4:checked~.content4, #tab5:checked~.content5, #tab6:checked~.content6 {
         display: block;
     }
+    #content {
+        padding: 15px 40px;
+        span {
+            display: block;
+            padding: 10px 0;
+            select {
+                margin-left: 10px;
+                width: 150px;
+            }
+        }
+    }
 }
 footer {
     background: #0a2f59;

@@ -39,7 +39,8 @@ function calculate() {
 
     if (!isNaN(digitDecimal)) {
 
-    } else {
-        alert("your number does not belong to  " + selectInput.options[selectInput.selectedIndex].value + " numbers ")
+    }
+    else {
+        alert("Your number does not belong to  " + selectInput.options[selectInput.selectedIndex].value + " numbers ");
     }
 }

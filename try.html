@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="content">
+        <h1>Number Systems Conversions</h1>
+
+        <p>Type your number here</p>
+        <input type="text" name="n" id="n">
+        <br>
+        <br>
+        <p>Calculate from</p>
+        <select name="type" id="type1">
+            <option value="binary">Binary</option>
+            <option value="decimal">Decimal</option>
+            <option value="octal">Octal</option>
+            <option value="hexadecimal">Hexadecimal</option>
+        </select>
+        <br>
+        <br>
+        <p>calculate to</p>
+        <select name="type" id="type2">
+            <option value="binary">Binary</option>
+            <option value="decimal">Decimal</option>
+            <option value="octal">Octal</option>
+            <option value="hexadecimal">Hexadecimal</option>
+        </select>
+        <br>
+        <br>
+        <button onclick="calculate()">Calculate</button>
+        <h2 id="result"></h2>
+    </div>
+    <!-- Optional JavaScript -->
+    <script>
+        function calculate() {
+            var selectInput = document.getElementById("type1");
+            var resultInput = document.getElementById("type2");
+            var n = document.getElementById("n").value;
+            var baseNumber;
+            if (selectInput.options[selectInput.selectedIndex].value == "binary") {
+                baseNumber = 2;
+            }
+            else if (selectInput.options[selectInput.selectedIndex].value == "decimal") {
+                baseNumber = 10;
+            }
+            else if (selectInput.options[selectInput.selectedIndex].value == "octal") {
+                baseNumber = 8;
+            }
+            else if (selectInput.options[selectInput.selectedIndex].value == "hexadecimal") {
+                baseNumber = 16;
+            }
+            else {
+                //error
+            }
+            var digitDecimal = parseInt(n, baseNumber);
+            var digitFinal;
+            if (resultInput.options[resultInput.selectedIndex].value == "binary") {
+                digitFinal = digitDecimal.toString(2);
+            }
+            else if (resultInput.options[resultInput.selectedIndex].value == "octal") {
+                digitFinal = digitDecimal.toString(8);
+            }
+            else if (resultInput.options[resultInput.selectedIndex].value == "hexadecimal") {
+                digitFinal = digitDecimal.toString(16);
+            }
+            else {
+                digitFinal = digitDecimal;
+            }
+            document.getElementById("result").innerHTML = digitFinal;
+
+            var digitDecimal = parseInt(n, baseNumber);
+            var digitFinal;
+
+            if (!isNaN(digitDecimal)) {
+
+            }
+            else {
+                alert("Your number does not belong to  " + selectInput.options[selectInput.selectedIndex].value + " numbers ");
+            }
+        }</script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

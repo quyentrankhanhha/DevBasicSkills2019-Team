@@ -53,14 +53,12 @@
                 </label>
                 <section class="content1 container">
                     <h3 class="text-center pt-3">Numberal Systems</h3>
-                    <form>
-                        <div id="content">
-                            <h1>Number Systems Conversions</h1>
-
-                            Type your number here
+                    <div id="content">
+                        <span>
+                            Type your number here:
                             <input type="text" name="n" id="n">
-                            <br>
-                            <br>
+                        </span>
+                        <span>
                             Calculate from
                             <select name="type" id="type1">
                                 <option value="binary">Binary</option>
@@ -68,24 +66,19 @@
                                 <option value="octal">Octal</option>
                                 <option value="hexadecimal">Hexadecimal</option>
                             </select>
-                            <br>
-                            <br>
-                            calculate to
+                        </span>
+                        <span>
+                            Calculate to
                             <select name="type" id="type2">
                                 <option value="binary">Binary</option>
                                 <option value="decimal">Decimal</option>
                                 <option value="octal">Octal</option>
                                 <option value="hexadecimal">Hexadecimal</option>
                             </select>
-                            <br>
-                            <br>
-                            <button onclick="calculate()">Calculate</button>
-                            <h2 id="result"></h2>
-                        </div>
-                        <div id="footer">
-
-                        </div>
-                    </form>
+                        </span>
+                        <button class="btn btn-outline-primary" onclick="calculate()">Calculate</button>
+                        <h2 id="result"></h2>
+                    </div>
                     <div class="instruction">
                         <h4 class="py-2">Binary Numberal System- Base 2</h4>
                         <p>Binary numbers uses only 0 and 1 digits.</p>

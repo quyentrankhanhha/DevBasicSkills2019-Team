@@ -126,6 +126,17 @@ main .content2 button {
 main #tab1:checked ~ .content1, main #tab2:checked ~ .content2, main #tab3:checked ~ .content3, main #tab4:checked ~ .content4, main #tab5:checked ~ .content5, main #tab6:checked ~ .content6 {
   display: block;
 }
+main #content {
+  padding: 15px 40px;
+}
+main #content span {
+  display: block;
+  padding: 10px 0;
+}
+main #content span select {
+  margin-left: 10px;
+  width: 150px;
+}
 
 footer {
   background: #0a2f59;
