@@ -140,6 +140,11 @@ main {
                 width: 150px;
             }
         }
+        table, ul {
+            position: relative;
+            left: 20%;
+            width: 30%;
+        }
     }
 }
 footer {

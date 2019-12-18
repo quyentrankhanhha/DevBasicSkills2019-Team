@@ -137,6 +137,11 @@ main #content span select {
   margin-left: 10px;
   width: 150px;
 }
+main #content table, main #content ul {
+  position: relative;
+  left: 20%;
+  width: 30%;
+}
 
 footer {
   background: #0a2f59;
